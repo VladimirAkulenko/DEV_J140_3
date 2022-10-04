@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+
+<GridPane  id="GridPane" alignment ="CENTER" hgap="15" vgap="15"  prefHeight="350" prefWidth="400" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dev_j140_3.FXMLDocumentController">
+    <padding>
+    <Insets bottom="25" left="25" right="25" top="25"/>
+    </padding>
+    <children>        
+        <Label id="Label" text="Welcom" GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.columnSpan="2" GridPane.rowSpan="1" fx:id="labelWelcom">           
+        </Label>         
+        <Label id="Label" text="User Name" GridPane.columnIndex="0" GridPane.rowIndex="1" fx:id="labelUserName"/>
+        <TextField id="TextField" GridPane.columnIndex="1" GridPane.rowIndex="1" fx:id="textFieldUserName"/>
+        <Label id="Label" text="Password" GridPane.columnIndex="0" GridPane.rowIndex="2" fx:id="labelPassword"/>
+        <PasswordField id="PasswordField" GridPane.columnIndex="1" GridPane.rowIndex="2" fx:id="passwordField"/>
+                
+        <HBox id="HBox" alignment ="BOTTOM_RIGHT" spacing="10" GridPane.columnIndex="1" GridPane.rowIndex="4" fx:id="addbutton">            
+            <Button id="Button" text="Sign in"  fx:id="btn" />              
+        </HBox>
+        <Text id="Text" GridPane.columnIndex="1" GridPane.rowIndex="6" fx:id="actionText"/>    
+
+    </children>
+    
+</GridPane>
